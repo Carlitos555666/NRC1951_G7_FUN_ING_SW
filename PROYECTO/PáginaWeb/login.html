@@ -17,7 +17,7 @@
   <h1>Iniciar Sesión</h1>
   
   <!-- Login Form -->
-  <form id="loginForm">
+  <form id="loginForm" onsubmit="event.preventDefault(); redirigir();">
     <div class="form-group">
       <label for="username">Usuario:</label><br>
       <input type="text" id="username" name="username" required>
@@ -45,7 +45,29 @@
     <p>¿Ya tienes una cuenta? <span class="register-link" onclick="showLoginForm()">Inicia sesión aquí</span>.</p>
   </form>
 
-  <script src="js/login.js"></script>
+  <script>
+    function redirigir() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
 
+      // Verificar si el usuario y la contraseña son correctos
+      if (username === "tesorero" && password === "1234") {
+        window.location.href = "https://carlitoscarloss644.wixsite.com/tierras-del-sol-2-te";
+      } else {
+        window.location.href = "https://carlitoscarloss644.wixsite.com/tierras-del-sol-2";
+      }
+    }
+    
+    // Funciones para mostrar el formulario de registro y login
+    function showRegisterForm() {
+      document.getElementById('loginForm').style.display = 'none';
+      document.getElementById('registerForm').style.display = 'block';
+    }
+
+    function showLoginForm() {
+      document.getElementById('registerForm').style.display = 'none';
+      document.getElementById('loginForm').style.display = 'block';
+    }
+  </script>
 </body>
 </html>
