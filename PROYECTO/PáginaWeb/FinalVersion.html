@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tierra del Sol 2</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./Images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+
+  <style> 
+    body { background-color: #51acca; /* Color celeste */ } 
+    .footer__img { width: 24px; height: 24px; } /* Ajusta tamaño de íconos del footer */
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="nav_logo">
+        <h2 class="nav__title">Tierra del Sol 2</h2>
+      </div>
+      <ul class="nav__link nav__link--menu">
+        <li class="nav__items"><a href="#" class="nav__links">Inicio</a></li>
+        <li class="nav__items"><a href="#" class="nav__links">Notificaciones</a></li>
+        <li class="nav__items"><a href="#" class="nav__links">Contáctenos</a></li>
+        <li class="nav__items"><a href="login.html" class="nav__links">Login or Sign Up</a></li>
+      </ul>
+      <div class="nav__menu">
+        <img src="./Images/menu.svg" class="nav__img" alt="Menú Inicio">
+      </div>
+    </nav>
+    <section class="hero__container container">
+      <h1 class="hero__title">Tierra del Sol 2</h1>
+      <p class="hero__paragraph">
+        Bienvenido a uno de los mejores y más lujosos conjuntos residenciales de Ecuador.
+        Más que una casa, un hogar.
+      </p>
+      <a href="#" class="cta">Me interesa</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="container about">
+      <h2 class="subtitle">¿Por qué elegirnos?</h2>
+      <p class="about__paragraph">
+        Todo lo necesario para vivir una vida tranquila, segura y feliz, en un solo lugar. Visítanos.
+      </p>
+      <div class="about__main">
+        <article class="about__icons">
+          <img src="./images/Salud.svg" class="about__icon" alt="Servicio Médico">
+          <h3 class="about__title">Servicio Médico</h3>
+          <p class="about__paragrah">
+            En nuestra urbanización, tu salud y bienestar son nuestra prioridad. Ofrecemos un servicio médico 24/7 disponible para ti y tu familia.
+          </p>
+        </article>
+        <article class="about__icons">
+          <img src="./Images/Seguridad.svg" class="about__icon" alt="Seguridad">
+          <h3 class="about__title">Seguridad 24/7</h3>
+          <p class="about__paragrah">
+            Disfruta de la tranquilidad y seguridad que ofrece nuestra urbanización con un servicio de seguridad 24/7.
+          </p>
+        </article>
+        <article class="about__icons">
+          <img src="./images/AreasVerdes.svg" class="about__icon" alt="Áreas Verdes">
+          <h3 class="about__title">Áreas Verdes</h3>
+          <p class="about__paragrah">
+            Amplios espacios ajardinados, senderos para caminatas y zonas de juego para niños en nuestras áreas verdes.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="price container">
+      <h2 class="subtitle">Nuestros Precios Insuperables</h2>
+      <div class="price__table">
+        <div class="price__element">
+          <p class="price__name">Casa Standard</p>
+          <h3 class="price__price">$500/mes</h3>
+          <div class="price__items">
+            <p class="price__features">Acceso a todas las áreas comunes</p>
+            <p class="price__features">Servicio de seguridad 24/7</p>
+            <p class="price__features">Acceso a áreas verdes</p>
+          </div>
+          <a href="#" class="price__cta">Cotiza ahora</a>
+        </div>
+        <div class="price__element">
+          <p class="price__name">Casa Premium</p>
+          <h3 class="price__price">$900/mes</h3>
+          <div class="price__items">
+            <p class="price__features">Acceso exclusivo a la piscina y gimnasio</p>
+            <p class="price__features">Servicio de conserjería 24/7</p>
+          </div>
+          <a href="#" class="price__cta">Cotiza ahora</a>
+        </div>
+        <div class="price__element price__element--best">
+          <p class="price__name">Casa VIP</p>
+          <h3 class="price__price">$1400/mes</h3>
+          <div class="price__items">
+            <p class="price__features">Estacionamiento privado y seguro</p>
+            <p class="price__features">Acceso a salas de reuniones</p>
+          </div>
+          <a href="#" class="price__cta">Cotiza ahora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer__container container">
+      <nav class="nav nav--footer">
+        <h2 class="footer__title">Tierra del Sol 2</h2>
+        <ul class="nav__link nav__link--footer">
+          <li class="nav__items"><a href="#" class="nav__links">Inicio</a></li>
+          <li class="nav__items"><a href="#" class="nav__links">Acerca de Nosotros</a></li>
+          <li class="nav__items"><a href="#" class="nav__links">Contáctenos</a></li>
+          <li class="nav__items"><a href="login.html" class="nav__links">Login or Sign Up</a></li>
+        </ul>
+      </nav>
+      <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+        <h2 class="footer__newsletter">Sé parte de Nuestra Hermosa Familia</h2>
+        <div class="footer__inputs">
+          <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+          <input type="submit" value="Regístrate" class="footer__submit">
+        </div>
+      </form>
+    </section>
+    <section class="footer__copy container">
+      <div class="footer__social">
+        <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img" alt="Facebook"></a>
+        <a href="#" class="footer__icons"><img src="./images/x.svg" class="footer__img" alt="X"></a>
+        <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img" alt="YouTube"></a>
+      </div>
+      <h3 class="footer__copyright">Derechos reservados &copy; ESPE G7</h3>
+    </section>
+  </footer>
+</body>
+</html>
