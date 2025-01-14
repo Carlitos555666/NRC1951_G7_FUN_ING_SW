@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(120deg, #27ae60, #e74c3c, #ea0cbd, #f1c40f);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.formulario h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.username, .password {
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 2px solid #adadad;
+    transition: border-color 0.3s ease;
+}
+
+.username:hover, .password:hover {
+    border-color: #27ae60;
+}
+
+.username input, .password input {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label, .password label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 16px;
+    color: #888;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.username input:focus ~ label, .username input:not(:placeholder-shown) ~ label,
+.password input:focus ~ label, .password input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #27ae60;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+input:hover ~ span::before {
+    background: yellow;
+}

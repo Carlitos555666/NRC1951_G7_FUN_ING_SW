@@ -1,7 +1,7 @@
-<script>
 // Usuarios registrados
 const registeredUsers = [
-  { username: "tesorero", password: "tesorero123", role: "tesorero" } // Usuario fijo para el tesorero
+  { username: "tesorero", password: "t1234", role: "tesorero" }, // Usuario del tesorero
+  { username: "condomino", password: "c1234", role: "condomino" } // Usuario condómino
 ];
 
 // Mostrar formulario de registro
@@ -26,9 +26,10 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
   const user = registeredUsers.find(user => user.username === username && user.password === password);
 
   if (user) {
+    // Redirigir dependiendo del rol del usuario
     if (user.role === "tesorero") {
       window.location.href = "https://carlitoscarloss644.wixsite.com/tierras-del-sol-2-te";
-    } else {
+    } else if (user.role === "condomino") {
       window.location.href = "https://carlitoscarloss644.wixsite.com/tierras-del-sol-2";
     }
   } else {
@@ -52,4 +53,3 @@ document.getElementById("registerForm").addEventListener("submit", function (eve
     showLoginForm(); // Regresa al formulario de login
   }
 });
-</script>
