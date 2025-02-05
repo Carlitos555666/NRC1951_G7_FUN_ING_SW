@@ -94,9 +94,9 @@ void Mostrar() {
     }
 
 
-    cout << "\n-------------------- MATRIZ: ALÍCUOTAS ---------------------------------" << endl;
+    cout << "\n-------------------- MATRIZ: ALÍCUOTAS ----------------------------" << endl;
     cout << "Nombre\t\tGuardianía\tJardinería\tMantenimiento\tTotal Alícuotas" << endl;
-    cout << "-----------------------------------------------------------------------" << endl;
+    cout << "------------------------------------------------------------------" << endl;
     for (int i = 0; i < cantidad; i++) {
         cout << V[i].nombre << "\t\t" << V[i].precioGuardiania << "\t\t"
              << V[i].precioJardineria << "\t\t" << V[i].precioMantenimiento
@@ -112,7 +112,7 @@ bool Login() {
     int intentos = 0;
 
     while (intentos < 3) {
-        system("cls"); // Limpia la pantalla
+        system("cls");
         cout << "\n\n\n\t\t====================================" << endl;
         cout << "\t\t\tLogin del Sistema" << endl;
         cout << "\t\t====================================" << endl;
@@ -123,26 +123,16 @@ bool Login() {
         cout << "\t\t\tContraseña: ";
         getline(cin, pass);
 
-        // Validación de la longitud de la contraseña
-        if (pass.length() < 8) {
-            cout << "\nError: La contraseña debe tener al menos 8 caracteres.\n";
-            system("pause"); // Pausa para mostrar el mensaje antes de limpiar
-            intentos++;      // Cuenta como intento fallido
-            continue;        // Reintenta la entrada
-        }
-
         if (user == User && pass == Password) {
-            system("cls"); // Limpia la pantalla al ingresar correctamente
             cout << "\nAcceso concedido. Bienvenido, Tesorero!\n";
             return true;
         } else {
             cout << "\nAcceso denegado. Intente nuevamente.\n";
-            intentos++; // Incrementa el contador de intentos fallidos
-            system("pause"); // Pausa para que el usuario pueda leer el mensaje
+            intentos++;
+            system("pause");
         }
     }
 
-    // Si se exceden los 3 intentos
     system("cls");
     cout << "\n\t\t\tUsted falló más de 3 veces." << endl;
     cout << "\n\t\t\tFinalizando programa..." << endl;
@@ -150,14 +140,12 @@ bool Login() {
 }
 
 
-
-
 int main() {
     setlocale(LC_ALL, "");
 
     // Verificar acceso al sistema
     if (!Login()) {
-        cout << "\nSu cuenta ha sido bloqueada \nIntente más tarde...\n";
+        cout << "\nAcceso al sistema denegado. \nFinalizando el programa...\n";
         return 0; // Salida explícita al fallar el login
     }
 
@@ -168,3 +156,4 @@ int main() {
 
     return 0;
 }
+
