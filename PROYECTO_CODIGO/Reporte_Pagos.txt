@@ -1,11 +1,11 @@
 ---------------------------- PAGO ALQUILER ----------------------
 Nombre              Casa Comunal   Cancha Césped  Total Alquiler 
 -----------------------------------------------------------------
-carlos              10             120            130            
-luisa               90             80             170            
+Carlos P            100.2          300.2          400.4          
+nobita XD           20             60             80             
 
 ------------------------------ PAGO ALÍCUOTAS -------------------------------------
 Nombre              Guardianía     Jardinería     Mantenimiento     Total Alícuotas
 -----------------------------------------------------------------------------------
-carlos              30             40             50                120            
-luisa               70             60             50                180            
+Carlos P            50             40.3           60.1              150.4          
+nobita XD           40.3           20.1           60.4              120.8          
